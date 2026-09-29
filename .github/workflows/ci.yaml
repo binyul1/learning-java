@@ -26,7 +26,7 @@ jobs:
           cache: maven
       
       - name: Setup Maven
-        run: sudo yum update && sudo yum install maven -y
+        run: sudo apt-get update && sudo apt-get install maven -y
 
       - name: Check Version
         run: java -version && mvn -version
